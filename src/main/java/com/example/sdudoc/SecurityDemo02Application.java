@@ -24,5 +24,6 @@ public class SecurityDemo02Application {
         ServletRegistrationBean registration = new ServletRegistrationBean(new VerifyServlet());
         registration.addUrlMappings(SecurityConstants.VALIDATE_CODE_PIC_URL);
         return registration;
+
     }
 }
