@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
-@EnableRedisHttpSession
+//@EnableRedisHttpSession   禁用session共享
 @SpringBootApplication
 public class SecurityDemo02Application {
 

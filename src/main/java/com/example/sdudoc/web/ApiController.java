@@ -64,7 +64,7 @@ public class ApiController {
         params.put("mobile",mobile);//接受短信的用户手机号码
 //        params.put("tpl_id","191715");//您申请的短信模板ID，根据实际情况修改 此处为【sdudoc】
         params.put("tpl_value","#code#="+code);//您设置的模板变量，根据实际情况修改
-        params.put("key","e541a6ddaf7914dac8c0ca72e2c3daeb");//应用APPKEY(应用详细页查询)
+//        params.put("key","e541a6ddaf7914dac8c0ca72e2c3daeb");//应用APPKEY(应用详细页查询)
         try {
             result = SmsCodeSender.net(url, params, "GET");
             JSONObject object = JSONObject.fromObject(result);
