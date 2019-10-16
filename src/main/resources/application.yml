@@ -1,0 +1,24 @@
+server:
+  servlet:
+    session:
+      timeout: 60
+  port: 8060
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security-demo02?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  main:
+    # Spring Boot 2.1 需要显式开启bean override
+    allow-bean-definition-overriding: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  session:
+    store-type: redis
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
